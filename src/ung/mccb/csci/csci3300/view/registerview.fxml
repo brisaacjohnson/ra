@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="316.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ung.mccb.csci.csci3300.controller.Controller">
+<Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the UNG Alumni Portal" />
+<AmbientLight color="#004180" lightOn="true" />
+<Pane prefHeight="200.0" prefWidth="310.0" />
+<Text lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter First Name:" />
+
+<TextField fx:id="txtFirstname" promptText="Enter First Name" />
+<SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Last Name:" />
+    </items>
+</SplitPane>
+<TextField fx:id="txtLastname" promptText="Enter Last Name" />
+<AmbientLight color="#004180" lightOn="true" />
+<SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Graduation Year:" />
+    </items>
+</SplitPane>
+<TextField fx:id="txtGradYear" promptText="Enter Graduation Year" />
+<AmbientLight color="#004180" lightOn="true" />
+<SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Major:" />
+    </items>
+</SplitPane>
+<TextField fx:id="txtMajor" promptText="Enter Major"/>
+
+<AmbientLight color="#004180" lightOn="true" />
+<SplitPane dividerPositions="0.5, 0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Email:" />
+    </items>
+</SplitPane>
+<TextField fx:id="txtEmail" promptText="Enter Email" />
+<AmbientLight color="#004180" lightOn="true" />
+<SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+
+    </items>
+</SplitPane>
+
+<AmbientLight color="#004180" lightOn="true" />
+<Button onAction="#submitRecord" text="Submit" />
+</VBox>
